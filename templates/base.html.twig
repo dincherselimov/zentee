@@ -93,7 +93,15 @@
                                         @click="isOpen = false">
                                         {{ app.user ? 'Logout' : 'Login' }}
                                     </a>
-                                </li>                                
+                                </li>      
+                                 <li class="mr-3">
+                                    <a
+                                        class="inline-block text-gray-300 no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
+                                        href="/{{app.user ? '' : 'register'}}"
+                                        @click="isOpen = false">
+                                         {{ app.user ? '' : 'Register' }}
+                                    </a>
+                                </li>                                    
                             </ul>
                         </div>
                     </nav>
@@ -105,7 +113,7 @@
             {% block footer %}
                 <footer class="bg-gray-600 py-6 mt-20">
                     <p class="w-25 w-4/5 text-center pb-3 m-auto text-base text-gray-100 pt-6">
-                        Copyright 2021 Code With Dary. All Rights Reserved
+                        Copyright 2024 Code With Dinko. All Rights Reserved
                     </p>
                 </footer>
             {% endblock %}
